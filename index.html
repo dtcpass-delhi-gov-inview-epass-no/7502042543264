@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Get e-BusPass</title>
+  <link rel="icon" href="DTC1.png" type="x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-icon">☰</div>
+    <div class="nav-center"><a href="#" class="active" style="color:#01A2A6;">Home</a></div>
+    <div class="more-icon">⋮</div>
+  </header>
+
+  <div class="container">
+    <h4 class="panel-title">Get Your e-BusPass</h4>
+    <hr class="divider" />
+    <form id="busForm">
+      <label for="busPass">e-BusPass Number <span class="required">*</span></label>
+      <input type="text" id="busPass" value="7502042543262" disabled />
+
+      <label for="mobile">Enter Mobile Number <span class="required">*</span></label>
+      <input type="tel" id="mobile" placeholder="Enter Mobile Number" />
+
+      <div class="captcha-title">Captcha</div>
+      <div class="captcha-section">
+        <img src="captcha.png" alt="Captcha" />
+        <div class="refresh-icon">
+          <img src="refresh.png" alt="Captcha" />
+        </div>
+      </div>
+
+      <label for="captchaInput">Type the captcha Here</label>
+      <input type="text" id="captchaInput" placeholder="Type Captcha" />
+      <button type="submit" class="submit-btn">SUBMIT</button>
+      <hr class="footer-divider" />
+    </form>
+  </div>
+
+  <div class="footer-box"></div>
+  <footer style="font-size: 13px; font-weight: bold; color: #000000;">
+    Copyright © - Delhi e-Governance Society 2025
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
